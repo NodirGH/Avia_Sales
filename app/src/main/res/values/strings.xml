@@ -1,3 +1,28 @@
 <resources>
     <string name="app_name">Avia Sales</string>
+    <string name="SearchCheapTickets">Поиск дешевых авиабилетов</string>
+    <string name="WhereToFly">Куда - Турция</string>
+    <string name="MusicFly">Музыкально отлететь</string>
+    <string name="ShowAllPlaces">Показать все места</string>
+    <string name="YourFirstOrder">Ваш первый раз</string>
+    <string name="Tickets">Авиабилеты</string>
+    <string name="Hotels">Отели</string>
+    <string name="InShort">Короче</string>
+    <string name="Subscribers">Подписки</string>
+    <string name="Profile">Профиль</string>
+    <string name="HardRoutine">Сложный маршрут</string>
+    <string name="Anywhere">Куда угодно</string>
+    <string name="Weekend">Выходные</string>
+    <string name="HotTickets">Горячие билеты</string>
+    <string name="PopularDestination">Популярное направление</string>
+    <string name="SeeAllTickets">Посмотреть все билеты</string>
+    <string name="Return">обратно</string>
+    <string name="Economy">эконом</string>
+    <string name="StraightRails">Прямые рельсы</string>
+    <string name="SubscribeToPrice">Подписка на цену</string>
+    <string name="Filter">Фильтр</string>
+    <string name="PriceChart">График цен</string>
+    <string name="MostComfortable">Самый удобный</string>
+    <string name="ArrivalInEvening">Прилет вечером</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
