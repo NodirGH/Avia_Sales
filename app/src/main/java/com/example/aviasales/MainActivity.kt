@@ -1,13 +1,17 @@
 package com.example.aviasales
 
-import androidx.appcompat.app.AppCompatActivity
+import android.os.Build
 import android.os.Bundle
+import android.view.WindowInsets
+import android.view.WindowManager
+import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
 import com.example.aviasales.databinding.ActivityMainBinding
 import extension.hideAnimWithSlideDown
 import extension.showAnimWithSlideUp
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -37,6 +41,19 @@ class MainActivity : AppCompatActivity() {
                     binding.bottomNavigationView.hideAnimWithSlideDown()
                 }
             }
+        }
+    }
+
+    private fun hideSystemBars() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+            val controller = window.insetsController
+            controller?.hide(WindowInsets.Type.navigationBars())
+        } else {
+            @Suppress("DEPRECATION")
+            window.setFlags(
+                WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN
+            )
         }
     }
 }
