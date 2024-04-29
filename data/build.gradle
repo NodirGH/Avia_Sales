@@ -31,7 +31,8 @@ android {
 
 dependencies {
 
-    implementation project(':toolkit')
+    implementation project(":toolkit")
+    implementation project(":domain")
     implementation AndroidDependency.core
     implementation AndroidDependency.appCompat
     implementation AndroidDependency.material

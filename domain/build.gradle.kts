@@ -1,6 +1,9 @@
 plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
+    id("kotlin-kapt")
+    id("kotlin-parcelize")
+    id("dagger.hilt.android.plugin")
 }
 
 android {
@@ -40,4 +43,17 @@ dependencies {
     testImplementation(TestDependencies.junit)
     androidTestImplementation(TestDependencies.junitExt)
     androidTestImplementation(TestDependencies.espresso)
+
+    implementation(AndroidDependency.hilt)
+    kapt(AndroidDependency.hiltKapt)
+
+    debugImplementation(AndroidDependency.chucker)
+    releaseImplementation(AndroidDependency.chuckerNoOp)
+
+    implementation(OkhttpDependency.okhttp)
+    implementation(OkhttpDependency.okhttpLogger)
+    implementation(RetrofitDependency.retrofit)
+    implementation(RetrofitDependency.gsonRetrofit)
+
+    implementation(CoroutineDependency.core)
 }

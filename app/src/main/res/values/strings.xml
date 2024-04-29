@@ -2,6 +2,7 @@
     <string name="app_name">Avia Sales</string>
     <string name="SearchCheapTickets">Поиск дешевых \nавиабилетов</string>
     <string name="WhereToFly">Куда - Турция</string>
+    <string name="FromWhereFly">Откуда - Москва</string>
     <string name="MusicFly">Музыкально отлететь</string>
     <string name="ShowAllPlaces">Показать все места</string>
     <string name="YourFirstOrder">Ваш первый раз</string>

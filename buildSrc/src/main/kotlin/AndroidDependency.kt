@@ -24,6 +24,7 @@ object AndroidDependency {
     const val navigationUiKtx =
         "androidx.navigation:navigation-ui:${Versions.navigationComponent}"
 
-
+    const val chucker = "com.github.chuckerteam.chucker:library:${Versions.chucker}"
+    const val chuckerNoOp = "com.github.chuckerteam.chucker:library-no-op:${Versions.chucker}"
 
 }
